@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Nathania</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="nathania-bg">
+    <a href="index.html" class="back-button">
+        ♡  home
+    </a>
+    <section class="nathania-page">
+        <h1>Nathania</h1>
+        <p class="subtitle">
+            a little corner of the internet made just for you
+        </p>
+    </section>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2D4dV2KXDTszzJ3p3cFqhA?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="love-section">
+        <h2> 5 things i love about you ♡ </h2>
+        <div class="love-note">
+            <p>
+                #1 You spill most of the tea for cilis haha.
+            </p>
+            <p>
+                #2 You are like my 2nd MUA, arigatoo.
+            </p>
+            <p>
+                #3 Your work smart not hard ways.
+            </p>
+            <p>
+                #4 Your taste in style, supa guud
+            </p>
+            <p>
+                #5 The funniest reactions come from you bae.
+            </p>
+        </div>
+    </section>
+    <section class="envelope-section">
+        <h2> a letter for you </h2>
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="front"></div>
+        </div>
+        <p>click to open</p>
+    </section>
+    <section class="letter-content">
+        <img src="photos/natha_polaroid.png" class="letter-photo">
+        <div class="letter-box">
+            <h2>Dear Natha,</h2>
+            <p> haaiii baee, crazy how 5  years ago, I barely knew u.. anyways look forward to seeing the amazing things you will do in life!! Congratulations on your graduation cilis maknae! </p>
+            <p> thank you so much bae for always making time and planning our hangouts!! arigato bae, really appreciate it. You have grown a lot since i met u, I hope u will continue to gain motivation n strength than stress, u have so much to look forward to. </p>
+            <p> Don’t forget about us baee, don’t forget to keep in touch with us and lets create the cilis business we always talk about!! </p>
+        </div>
+    </section>
+    <section class="memories-section">
+        <h2>our memories</h2>
+        <div class="memory-grid">
+            <img src="nathania/nathania-1.JPG">
+            <img src="nathania/nathania-2.JPG">
+            <img src="nathania/nathania-3.JPG">
+            <img src="nathania/nathania-4.JPG">
+            <img src="nathania/nathania-5.JPG">
+            <img src="nathania/nathania-6.JPG">
+            <img src="nathania/nathania-7.JPG">
+            <img src="nathania/nathania-8.JPG">
+            <img src="nathania/nathania-9.JPG">
+            <img src="nathania/nathania-10.JPG">
+            <img src="nathania/nathania-11.JPG">
+            <img src="nathania/nathania-12.JPG">
+            <img src="nathania/nathania-13.JPG">
+            <img src="nathania/nathania-14.JPG">
+            <img src="nathania/nathania-15.JPG">
+            <img src="nathania/nathania-16.JPG">
+            <img src="nathania/nathania-17.JPG">
+            <img src="nathania/nathania-18.JPG">
+            <img src="nathania/nathania-19.JPG">
+            <img src="nathania/nathania-20.JPG">
+            <img src="nathania/nathania-21.JPG">
+            <img src="nathania/nathania-22.JPG">
+            <img src="nathania/nathania-23.JPG">
+        </div>
+    </section>
+    <section class="ending-section">
+        <p>love, Michelle</p>
+    </section>
+    <script>
+        function openLetter(){
+            document.querySelector(".envelope").classList.add("open");
+            setTimeout(() => {
+                const letter = document.querySelector(".letter-content");
+                letter.style.display = "block";
+                setTimeout(() => {
+                    letter.classList.add("show");
+                }, 50);
+            }, 700);
+           
+        }
+    </script>
+    </body>
+</html>
