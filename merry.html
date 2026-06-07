@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>Klara</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="merry-bg">
+    <a href="index.html" class="back-button">
+        ♡ home
+    </a>
+    <section class="merry-page">
+        <h1>Merry</h1>
+        <p class="subtitle">
+            a little corner of the internet made just for you
+        </p>
+    </section>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/2Wy57u9egS9hpXtDGnzi8A?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="love-section">
+        <h2>5 things i love about you ♡ </h2>
+        <div class="love-note">
+            <p>
+                #1 You are so pick me, but i love u lol.
+            </p>
+            <p>
+                #2 They way you actually lock in for assignments n exams motivate me.
+            </p>
+            <p>
+                #3 How you always bring up random stickers or jokes, apalagi pas soal sb wkwkw.
+            </p>
+            <p>
+                #4 You are very hard working, and give it your all in everything u do.
+            </p>
+            <p>
+                #5 When we laugh at the same things.
+            </p>
+        </div>
+    </section>
+    <section class="envelope-section">
+        <h2> a letter for you </h2>
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="front"></div>
+        </div>
+        <p>click to open</p>
+    </section>
+    <section class="letter-content">
+        <img src="photos/merry_polaroid.png" class="letter-photo">
+        <div class="letter-box">
+            <h2>Dear meziiz,</h2>
+            <p> hai unnie, congrats on graduating with 100+ LGBTQ papers!! </p>
+            <p> i hope u will find ur future koko cindo or maybe non cindo but hopefully he will treat u well unnie!! pls continue to be unnie unnie oppa hajima with me until we acc take it to korea (amin). </p>
+            <p> thank you unnie mewi for all the notes in class bfr exams </p>
+            <p> Your yeodongsaeng, </p>
+            <p> Michelle </p>
+        </div>
+    </section>
+    <section class="memories-section">
+        <h2>our memories</h2>
+        <div class="memory-grid">
+            <img src="merry/merry-1.JPG">
+            <img src="merry/merry-2.JPG">
+            <img src="merry/merry-3.JPG">
+            <img src="merry/merry-4.JPG">
+            <img src="merry/merry-5.JPG">
+            <img src="merry/merry-6.JPG">
+            <img src="merry/merry-7.JPG">
+            <img src="merry/merry-8.JPG">
+            <img src="merry/merry-9.JPG">
+            <img src="merry/merry-10.JPG">
+            <img src="merry/merry-11.JPG">
+            <img src="merry/merry-12.JPG">
+            <img src="merry/merry-13.JPG">
+            <img src="merry/merry-14.JPG">
+            <img src="merry/merry-15.JPG">
+            <img src="merry/merry-16.JPG">
+            <img src="merry/merry-17.JPG">
+            <img src="merry/merry-18.JPG">
+        </div>
+    </section>
+    <section class="ending-section">
+        <p>love, Michelle</p>
+    </section>
+    <script>
+        function openLetter(){
+            document.querySelector(".envelope").classList.add("open");
+            setTimeout(() => {
+                const letter = document.querySelector(".letter-content");
+                letter.style.display = "block";
+                setTimeout(() => {
+                    letter.classList.add("show");
+                }, 50);
+            }, 700);
+           
+        }
+    </script>
+    </body>
+</html>
