@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <title>Hartaty</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="hartaty-bg">
+    <a href="index.html" class="back-button">
+        ♡ home
+    </a>
+    <section class="hartaty-page">
+        <h1>Hartaty</h1>
+        <p class="subtitle">
+            a little corner of the internet made just for you
+        </p>
+    </section>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/1HNkqx9Ahdgi1Ixy2xkKkL?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="love-section">
+        <h2>5 things i love about you ♡ </h2>
+        <div class="love-note">
+            <p>
+                #1 You are always giving a ton of advises to me especially in styling.
+            </p>
+            <p>
+                #2 You never gate keep with me xixixi.
+            </p>
+            <p>
+                #3 You are always so random, ofc in a good way ya haha.
+            </p>
+            <p>
+                #4 Your always positive.
+            </p>
+            <p>
+                #5 You're the most genuine person I know.
+            </p>
+        </div>
+    </section>
+    <section class="envelope-section">
+        <h2> a letter for you </h2>
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="front"></div>
+        </div>
+        <p>click to open</p>
+    </section>
+    <section class="letter-content">
+        <img src="photos/ty_polaroid.png" class="letter-photo">
+        <div class="letter-box">
+            <h2>Dear Hartaty,</h2>
+            <p> hai baee, we are finally graduating baee. You are one of the strongest and most determined person I know. CONGRATS BAEE MUAACCHHH!!! </p>
+            <p> aku masih inget awal-awal kamu baru masuk kls10, ngomongnya chinese nama mandarinnya baobei lagi wkwkkw. core memories banget sih jujur bae hahaha lowky like first impression aku sih. </p>
+            <p> thank you ya bae for everything, jujur aku masih shok kt bisa sedeket ini dari yg awalnya sama2 malu2an??? kek random aja gitu. Also for always helping me with skincare, makeup advises dll, mungkin di kedepannya aku bakal tetep nanya kamu boleh ya baee. </p>
+            <p> Once again, I really want to thank you for being such a great friend, I really appreciate everything u do bae. Also, thank you for always supporting me in the things I do, whether it be something silly or illegal HAHAH </p>
+            <p> Your baby, </p>
+            <p> Michelle </p>
+        </div>
+    </section>
+    <section class="memories-section">
+        <h2>our memories</h2>
+        <div class="memory-grid">
+            <img src="hartaty/hartaty-1.JPG">
+            <img src="hartaty/hartaty-2.JPG">
+            <img src="hartaty/hartaty-3.JPG">
+            <img src="hartaty/hartaty-4.JPG">
+            <img src="hartaty/hartaty-5.JPG">
+            <img src="hartaty/hartaty-6.JPG">
+            <img src="hartaty/hartaty-7.JPG">
+            <img src="hartaty/hartaty-8.JPG">
+            <img src="hartaty/hartaty-9.JPG">
+            <img src="hartaty/hartaty-10.JPG">
+            <img src="hartaty/hartaty-11.JPG">
+            <img src="hartaty/hartaty-12.JPG">
+            <img src="hartaty/hartaty-13.JPG">
+            <img src="hartaty/hartaty-14.JPG">
+            <img src="hartaty/hartaty-15.JPG">
+            <img src="hartaty/hartaty-16.JPG">
+            <img src="hartaty/hartaty-17.JPG">
+            <img src="hartaty/hartaty-18.JPG">
+            <img src="hartaty/hartaty-19.JPG">
+            <img src="hartaty/hartaty-20.JPG">
+            <img src="hartaty/hartaty-21.JPG">
+            <img src="hartaty/hartaty-22.JPG">
+        </div>
+    </section>
+    <section class="ending-section">
+        <p>love, ur bae</p>
+    </section>
+    <script>
+        function openLetter(){
+            document.querySelector(".envelope").classList.add("open");
+            setTimeout(() => {
+                const letter = document.querySelector(".letter-content");
+                letter.style.display = "block";
+                setTimeout(() => {
+                    letter.classList.add("show");
+                }, 50);
+            }, 700);
+           
+        }
+    </script>
+    </body>
+</html>
