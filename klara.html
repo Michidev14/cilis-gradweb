@@ -1,0 +1,96 @@
+<html>
+    <head>
+        <title>Klara</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="klara-bg">
+    <a href="index.html" class="back-button">
+        ♡ home
+    </a>
+    <section class="klara-page">
+        <h1>Klara</h1>
+        <p class="subtitle">
+            a little corner of the internet made just for you
+        </p>
+    </section>
+        <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/35ytd9cmG15jXG0RKWC9p4?utm_source=generator&theme=0" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="love-section">
+        <h2>5 things i love about you ♡ </h2>
+        <div class="love-note">
+            <p>
+                #1 You are always making us feel safe.
+            </p>
+            <p>
+                #2 You are chronically online lol
+            </p>
+            <p>
+                #3 You are always helping to speak up for us, the most bravest out of us.
+            </p>
+            <p>
+                #4 The way you react everytime we invite you for something horror related.
+            </p>
+            <p>
+                #5 Always understanding and giving mature advises for us kids lawlwl.
+            </p>
+        </div>
+    </section>
+    <section class="envelope-section">
+        <h2> a letter for you </h2>
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="front"></div>
+        </div>
+        <p>click to open</p>
+    </section>
+    <section class="letter-content">
+        <img src="photos/ala_polaroid.png" class="letter-photo">
+        <div class="letter-box">
+            <h2>Dear Alaaa,</h2>
+            <p> helloo mum, we finally made ittt, we graduated high school!! </p>
+            <p> I pray that in uni, you will sleep less in class, and start to lock in since we wont wakey u any more mum. Despite ur busy schedule, do remember that u have 7 kids across the world that will always trouble u xixi. </p>
+            <p> Your best daughter, </p>
+            <p> Michelle </p>
+        </div>
+    </section>
+    <section class="memories-section">
+        <h2>our memories</h2>
+        <div class="memory-grid">
+            <img src="klara/klara-1.JPG">
+            <img src="klara/klara-2.JPG">
+            <img src="klara/klara-3.JPG">
+            <img src="klara/klara-4.JPG">
+            <img src="klara/klara-5.JPG">
+            <img src="klara/klara-6.JPG">
+            <img src="klara/klara-7.JPG">
+            <img src="klara/klara-8.JPG">
+            <img src="klara/klara-9.JPG">
+            <img src="klara/klara-10.JPG">
+            <img src="klara/klara-11.JPG">
+            <img src="klara/klara-12.JPG">
+            <img src="klara/klara-13.JPG">
+            <img src="klara/klara-14.JPG">
+            <img src="klara/klara-15.JPG">
+            <img src="klara/klara-16.JPG">
+            <img src="klara/klara-17.JPG">
+         
+        </div>
+    </section>
+    <section class="ending-section">
+        <p>love, Michelle</p>
+    </section>
+    <script>
+        function openLetter(){
+            document.querySelector(".envelope").classList.add("open");
+            setTimeout(() => {
+                const letter = document.querySelector(".letter-content");
+                letter.style.display = "block";
+                setTimeout(() => {
+                    letter.classList.add("show");
+                }, 50);
+            }, 700);
+           
+        }
+    </script>
+    </body>
+</html>
