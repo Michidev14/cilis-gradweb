@@ -1,0 +1,110 @@
+<html>
+    <head>
+        <title>Callista</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="callista-bg">
+    <a href="index.html" class="back-button">
+        ♡ home
+    </a>
+    <section class="callista-page">
+        <h1>Callista</h1>
+        <p class="subtitle">
+            a little corner of the internet made just for you
+        </p>
+    </section>
+    <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/6rurduYegrf5XSZrphuyF2?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="love-section">
+        <h2>5 things i love about you ♡ </h2>
+        <div class="love-note">
+            <p>
+                #1 You are always patient with me when i have my tantrums.
+            </p>
+            <p>
+                #2 you are super goofy like frog and horse combined.
+            </p>
+            <p>
+                #3 you always TRY to make time for me.
+            </p>
+            <p>
+                #4 always there to hear my rants.
+            </p>
+            <p>
+                #5 solid sister, stayed with me thru thick n thin, mwa.
+            </p>
+        </div>
+    </section>
+    <section class="envelope-section">
+        <h2> a letter for you </h2>
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="front"></div>
+        </div>
+        <p>click to open</p>
+    </section>
+    <section class="letter-content">
+        <img src="photos/liz_polaroid.png" class="letter-photo">
+        <div class="letter-box">
+            <h2>Dear Lizzy,</h2>
+            <p> hey sister [ew], so happy to finally graduate high school with u even tho this legit is our 3rd time graduating together, But i really cherish and appreciate every moment and fights we had with each other. </p>
+            <p> I genuinely love how we are just like actual siblings, doing everything together and thank you so much for all the chem tutors, even though it isn’t helpful i guess… also for all the late night calls, roblox calls, ever since covid era, before, after that era up till now. </p>
+            <p> I still remember us sneaking our laptops for sleep calls, and lowky wanna do it again in the future HAHAH. thank you also for taking me to new places like warteg etc, end up experiencing new stuff with u qween. </p>
+            <p> I hope that in the future, where ever our path leads us, we will forever continue to be the best of friends and wont be separated. </p>
+            <p> PS. stop taking so long to reply to me, should always update n call me often xixi. </p>
+            <p> Sincerely, </p>
+            <p> Michu</p>
+        </div>
+    </section>
+    <section class="memories-section">
+        <h2>our memories</h2>
+        <div class="memory-grid">
+            <img src="callista/callista-1.JPG">
+            <img src="callista/callista-2.JPG">
+            <img src="callista/callista-3.JPG">
+            <img src="callista/callista-4.JPG">
+            <img src="callista/callista-5.JPG">
+            <img src="callista/callista-6.JPG">
+            <img src="callista/callista-7.JPG">
+            <img src="callista/callista-8.JPG">
+            <img src="callista/callista-9.JPG">
+            <img src="callista/callista-10.JPG">
+            <img src="callista/callista-11.JPG">
+            <img src="callista/callista-12.JPG">
+            <img src="callista/callista-13.JPG">
+            <img src="callista/callista-14.JPG">
+            <img src="callista/callista-15.JPG">
+            <img src="callista/callista-16.JPG">
+            <img src="callista/callista-17.JPG">
+            <img src="callista/callista-18.JPG">
+            <img src="callista/callista-19.JPG">
+            <img src="callista/callista-20.JPG">
+            <img src="callista/callista-21.JPG">
+            <img src="callista/callista-22.JPG">
+            <img src="callista/callista-23.JPG">
+            <img src="callista/callista-24.JPG">
+            <img src="callista/callista-25.JPG">
+            <img src="callista/callista-26.JPG">
+            <img src="callista/callista-27.JPG">
+            <img src="callista/callista-28.JPG">
+
+        </div>
+    </section>
+    <section class="ending-section">
+        <p>love, princess michu</p>
+    </section>
+    <script>
+        function openLetter(){
+            document.querySelector(".envelope").classList.add("open");
+            setTimeout(() => {
+                const letter = document.querySelector(".letter-content");
+                letter.style.display = "block";
+                setTimeout(() => {
+                    letter.classList.add("show");
+                }, 50);
+            }, 700);
+           
+        }
+    </script>
+    </body>
+</html>
