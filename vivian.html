@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Vivian</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body class="vivian-bg">
+    <a href="index.html" class="back-button">
+        ♡ home
+    </a>
+    <section class="vivian-page">
+        <h1>Vivian</h1>
+        <p class="subtitle">
+            a little corner of the internet made just for you
+        </p>
+    </section>
+         <iframe data-testid="embed-iframe" style="border-radius:12px" src="https://open.spotify.com/embed/track/4kMhKbiXigJlo96XOzZlAo?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+    <section class="love-section">
+        <h2>5 things i love about you ♡ </h2>
+        <div class="love-note">
+            <p>
+                #1 SUPER timer managament master.
+            </p>
+            <p>
+                #2 You are the most positive person I have ever met.
+            </p>
+            <p>
+                #3 How safe i feel talking to you bae.
+            </p>
+            <p>
+                #4 Your hand made gifts, LOVEEEE.
+            </p>
+            <p>
+                #5 You are you and I love that about youu bao bei.
+            </p>
+        </div>
+    </section>
+
+    <section class="envelope-section">
+        <h2> a letter for you </h2>
+        <div class="envelope" onclick="openLetter()">
+            <div class="flap"></div>
+            <div class="front"></div>
+        </div>
+        <p>click to open</p>
+    </section>
+    
+    <section class="letter-content">
+        <img src="photos/vivi_polaroid.png" class="letter-photo">
+        <div class="letter-box">
+            <h2>Dear Vivian,</h2>
+            <p> hellaww baeeeee, congratulations!! I know you will do great things in your life and I will always be here to support you no matter what!! my OG since primary 1 until the end <333 我爱你!! </p>
+            <p> You’re someone I really admire. You’re so full of love & compassion & so talented and once u set ur sights on something, u continue to chase it. </p>
+            <p> U are my supa dupa bao bei, i pray that the distance wont separate our bond EAKKK. </p>
+            <p> Your baobei, </p>
+            <p> Emmie </p>
+        </div>
+    </section>s
+    <section class="memories-section">
+        <h2>our memories</h2>
+        <div class="memory-grid">
+            <img src="vivian/vivian-1.JPG">
+            <img src="vivian/vivian-2.JPG">
+            <img src="vivian/vivian-3.JPG">
+            <img src="vivian/vivian-4.JPG">
+            <img src="vivian/vivian-5.JPG">
+            <img src="vivian/vivian-6.JPG">
+            <img src="vivian/vivian-7.JPG">
+            <img src="vivian/vivian-8.JPG">
+            <img src="vivian/vivian-9.JPG">
+            <img src="vivian/vivian-10.JPG">
+            <img src="vivian/vivian-11.JPG">
+            <img src="vivian/vivian-12.JPG">
+            <img src="vivian/vivian-13.JPG">
+            <img src="vivian/vivian-14.JPG">
+            <img src="vivian/vivian-15.JPG">
+            <img src="vivian/vivian-16.JPG">
+            <img src="vivian/vivian-17.JPG">
+            <img src="vivian/vivian-18.JPG">
+            <img src="vivian/vivian-19.JPG">
+        </div>
+    </section>
+    <section class="ending-section">
+        <p>love, ur bae</p>
+    </section>
+    <script>
+        function openLetter(){
+            document.querySelector(".envelope").classList.add("open");
+            setTimeout(() => {
+                const letter = document.querySelector(".letter-content");
+                letter.style.display = "block";
+                setTimeout(() => {
+                    letter.classList.add("show");
+                }, 50);
+            }, 700);
+           
+        }
+    </script>
+    </body>
+</html>
